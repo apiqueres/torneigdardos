@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Torneo de Dardos · Bracket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 21 13.5 10.5M13.5 10.5l1.5-5 4-1 1 4-5 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13.5" cy="10.5" r="1.6" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-text">DARDOS <b>BRACKET</b></span>
+    </div>
+    <nav class="topbar-actions" id="actions"></nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="champ" class="champ-overlay hidden" role="dialog" aria-modal="true"></div>
+
+  <script src="effects.js"></script>
+  <script src="bracket.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
